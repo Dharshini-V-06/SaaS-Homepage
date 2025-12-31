@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenova - Modern SaaS Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom Styles for Unique Touch */
+    .hero-bg {
+      background: linear-gradient(135deg, #6C63FF, #42A5F5);
+    }
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    }
+    .cta-btn {
+      transition: all 0.3s ease;
+    }
+    .cta-btn:hover {
+      transform: scale(1.05);
+      background-color: #6C63FF;
+      color: white;
+    }
+    /* Decorative floating shapes */
+    .float-shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.3;
+      animation: float 6s ease-in-out infinite alternate;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(20px); }
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Navbar -->
+  <header class="w-full py-6 px-8 flex justify-between items-center bg-white shadow-md fixed top-0 left-0 z-50">
+    <div class="text-2xl font-bold text-indigo-600">Zenova</div>
+    <nav class="space-x-6 font-medium text-gray-700">
+      <a href="#features" class="hover:text-indigo-600">Features</a>
+      <a href="#pricing" class="hover:text-indigo-600">Pricing</a>
+      <a href="#testimonials" class="hover:text-indigo-600">Testimonials</a>
+      <a href="#contact" class="hover:text-indigo-600">Contact</a>
+    </nav>
+    <button class="bg-indigo-600 text-white px-5 py-2 rounded-full font-medium hover:bg-indigo-700 transition">Get Started</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg text-white h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <div class="max-w-5xl text-center px-4">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">Transform Your Workflow with Zenova</h1>
+      <p class="text-lg md:text-xl mb-8">All-in-one platform to manage your team, analytics, and productivity effortlessly.</p>
+      <div class="space-x-4">
+        <button class="cta-btn bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold">Start Free Trial</button>
+        <button class="cta-btn border-2 border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-indigo-600">Learn More</button>
+      </div>
+    </div>
+    <!-- Decorative shapes -->
+    <div class="float-shape w-72 h-72 bg-indigo-400 top-10 left-10"></div>
+    <div class="float-shape w-60 h-60 bg-pink-400 bottom-20 right-16"></div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Our Features</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Everything you need to streamline your business operations.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition transform text-center">
+        <div class="text-indigo-600 text-4xl mb-4">📊</div>
+        <h3 class="text-xl font-bold mb-2">Analytics Dashboard</h3>
+        <p class="text-gray-600">Get real-time insights into your business metrics and performance.</p>
+      </div>
+      <div class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition transform text-center">
+        <div class="text-indigo-600 text-4xl mb-4">🤝</div>
+        <h3 class="text-xl font-bold mb-2">Team Collaboration</h3>
+        <p class="text-gray-600">Collaborate efficiently with your team using our integrated tools.</p>
+      </div>
+      <div class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition transform text-center">
+        <div class="text-indigo-600 text-4xl mb-4">⚡</div>
+        <h3 class="text-xl font-bold mb-2">Automation</h3>
+        <p class="text-gray-600">Automate repetitive tasks to save time and focus on growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Pricing Plans</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Flexible pricing to suit businesses of all sizes.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-4">Basic</h3>
+        <p class="text-gray-600 mb-6">$19/month</p>
+        <ul class="text-gray-600 mb-6 space-y-2">
+          <li>📊 Analytics</li>
+          <li>👥 Team Collaboration</li>
+          <li>⚡ Basic Automation</li>
+        </ul>
+        <button class="cta-btn bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700">Choose Plan</button>
+      </div>
+      <div class="bg-indigo-600 text-white p-8 rounded-xl shadow-lg text-center transform scale-105">
+        <h3 class="text-2xl font-bold mb-4">Pro</h3>
+        <p class="mb-6">$49/month</p>
+        <ul class="mb-6 space-y-2">
+          <li>Advanced Analytics</li>
+          <li>Team Collaboration + Chat</li>
+          <li>Full Automation</li>
+        </ul>
+        <button class="cta-btn bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 hover:text-white">Choose Plan</button>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
+        <p class="text-gray-600 mb-6">Custom Pricing</p>
+        <ul class="text-gray-600 mb-6 space-y-2">
+          <li>All Pro Features</li>
+          <li>Dedicated Support</li>
+          <li>Custom Integrations</li>
+        </ul>
+        <button class="cta-btn bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700">Contact Us</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">What Our Customers Say</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Trusted by teams all over the world.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white p-8 rounded-xl shadow-md text-center">
+        <p class="text-gray-600 mb-4">"Zenova transformed our workflow and helped our team collaborate more efficiently."</p>
+        <h4 class="font-bold">Jane Doe</h4>
+        <span class="text-gray-400 text-sm">CEO, StartupX</span>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-md text-center">
+        <p class="text-gray-600 mb-4">"The analytics dashboard gives us insights we never had before. Highly recommend!"</p>
+        <h4 class="font-bold">John Smith</h4>
+        <span class="text-gray-400 text-sm">Product Manager, TechCorp</span>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-md text-center">
+        <p class="text-gray-600 mb-4">"Automation saved us so much time and reduced repetitive work across the team."</p>
+        <h4 class="font-bold">Alice Lee</h4>
+        <span class="text-gray-400 text-sm">Operations Head, BizSolutions</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="contact" class="py-20 px-6 text-center bg-indigo-600 text-white">
+    <h2 class="text-4xl font-bold mb-6">Ready to Boost Your Business?</h2>
+    <p class="mb-8">Sign up today and take your business to the next level.</p>
+    <button class="cta-btn bg-white text-indigo-600 px-8 py-4 rounded-full font-semibold hover:bg-indigo-700 hover:text-white">Get Started</button>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-gray-900 text-gray-400 py-16 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+    
+    <!-- Brand -->
+    <div>
+      <h2 class="text-2xl font-bold text-white mb-4">Zenova</h2>
+      <p class="text-gray-400">All-in-one platform to streamline your business workflow and productivity.</p>
+    </div>
+    
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="#features" class="hover:text-indigo-500">Features</a></li>
+        <li><a href="#pricing" class="hover:text-indigo-500">Pricing</a></li>
+        <li><a href="#testimonials" class="hover:text-indigo-500">Testimonials</a></li>
+        <li><a href="#contact" class="hover:text-indigo-500">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Follow Us</h3>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-indigo-500">🐦</a>
+        <a href="#" class="hover:text-indigo-500">📘</a>
+        <a href="#" class="hover:text-indigo-500">📸</a>
+        <a href="#" class="hover:text-indigo-500">💼</a>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Newsletter</h3>
+      <p class="text-gray-400 mb-4">Subscribe to get updates and news.</p>
+      <form class="flex flex-col space-y-3">
+        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-indigo-500" />
+        <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded-md font-semibold hover:bg-indigo-700 transition">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+    &copy; 2025 Zenova. All rights reserved.
+  </div>
+</footer>
+
+
+</body>
+</html>
